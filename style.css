@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+/*
+=============== 
+NAVIGATION
+===============
+*/
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #faf8f8;
+  padding: 5px;
+}
+.logo img {
+  width: 20%;
+  margin-left: 10%;
+}
+.navigation {
+  margin: auto 20px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+}
+
+.navigation ul li {
+  margin-left: 10px;
+}
+
+.navigation ul li p {
+  margin: auto;
+}
+.navigation ul li img {
+  width: 50px;
+  height: 40px;
+}
+.navigation ul li button {
+  display: flex;
+  padding: 3px 15px;
+  border-radius: 25px;
+  outline: none;
+  border: 3px solid #008cff;
+  background-color: #faf8f8;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #3f3d56;
+}
+.navigation ul li button:hover {
+  background-color: #008cff;
+  color: white;
+  transition: 0.3s ease-in-out;
+  border: 3px solid #3f3d56;
+}
+
+/*
+=============== 
+HOME SECTION
+===============
+*/
+
+.home-section {
+  height: 100vh;
+  padding-top: 15%;
+}
+
+.test {
+  background-color: #008cff;
+  height: 115%;
+  transform: skew(0deg, -5deg) translateY(-120px);
+}
+
+.content {
+  transform: skew(0deg, 5deg);
+  display: flex;
+  justify-content: space-around;
+}
+
+.content h1 {
+  font-family: "Hepta Slab", serif;
+  color: #008cff;
+  font-size: 50px;
+  display: inline-block;
+}
+
+.content img {
+  margin-top: -100px;
+  width: 75%;
+}
+
+/*
+=============== 
+PROJECTS SECTION
+===============
+*/
+.projects-section {
+  height: 100vh;
+  margin-top: 63px;
+}
+
+.project-blockA {
+  height: 40%;
+  background-color: #008cff;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.title img {
+  width: 150px;
+  margin-left: -80px;
+}
+
+.title h2 {
+  margin: auto 0;
+  color: #faf8f8;
+}
+.project-container {
+  width: 60%;
+  height: 150%;
+  position: absolute;
+  margin: 50px 20% 0 20%;
+}
+
+.project-set {
+  display: flex;
+  height: 50%;
+}
+
+.project {
+  width: 100%;
+  background-color: #faf8f8;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #dfe6ec;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.front {
+  border-radius: 5px;
+}
+
+.back {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.back:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.back img {
+  border-radius: 5px;
+}
+
+.project-blockB {
+  height: 60%;
+}
+
+/*
+=============== 
+SKILLS SECTION
+===============
+*/
+
+.skills-section {
+  height: 85vh;
+}
+
+.skills-blockA {
+  height: 40%;
+  background-color: #008cff;
+}
+.skills-container {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  border-radius: 5px;
+  display: flex;
+  padding: 5px;
+}
+
+.skill {
+  width: 100%;
+  background-color: #faf8f8;
+  height: auto;
+  border: 1px solid #dfe6ec;
+}
+
+.icon {
+  width: 80px;
+  display: block;
+  margin: 15px auto;
+}
+.skill h3 {
+  text-align: center;
+}
+
+.skill ul {
+  width: 75%;
+  margin: 12% auto;
+  padding: 0 10px;
+  border-radius: 0px 5px;
+  background-color: white;
+  border: 1px solid #faf8f8;
+}
+
+.skill ul li {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #faf8f8;
+}
+
+.skill ul li h4 {
+  margin: auto;
+  padding-right: 50px;
+}
+.skill ul li img {
+  width: 50px;
+}
+
+/*
+=============== 
+ABOUT SECTION
+===============
+*/
+
+.about-section {
+  height: 30vh;
+}
+
+.about-section .title h2 {
+  color: #3f3d56;
+}
+/*
+=============== 
+FOOTER SECTION
+===============
+*/
+
+footer {
+  height: 50vh;
+  background-color: #008cff;
+}
