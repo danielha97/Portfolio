@@ -15,6 +15,29 @@ NAVIGATION
   background-color: #faf8f8;
   padding: 5px;
 }
+
+.scroll.nav-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #faf8f8b7;
+}
+
+.scroll .logo img {
+  width: 10%;
+}
+
+.scroll .navigation ul li button {
+  border: 3px solid #008cff;
+  background-color: #f1cb63;
+  color: #3f3d56;
+}
+
+.scroll .navigation ul li button:hover {
+  background-color: #595674;
+  color: #f1cb63;
+}
+
 .logo img {
   width: 20%;
   margin-left: 10%;
@@ -26,6 +49,10 @@ NAVIGATION
 .navigation ul {
   display: flex;
   list-style: none;
+}
+
+.navigation ul a {
+  text-decoration: none;
 }
 
 .navigation ul li {
@@ -48,7 +75,7 @@ NAVIGATION
   background-color: #faf8f8;
   font-family: "Dosis", sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 1px;
   cursor: pointer;
   color: #3f3d56;
@@ -87,12 +114,15 @@ HOME SECTION
   font-family: "Hepta Slab", serif;
   color: #008cff;
   font-size: 50px;
-  display: inline-block;
+  position: absolute;
+  margin-top: -140px;
+  margin-right: 100px;
 }
 
 .content img {
   margin-top: -100px;
   width: 75%;
+  margin-left: 20%;
 }
 
 /*
@@ -119,13 +149,16 @@ PROJECTS SECTION
 }
 
 .title img {
-  width: 150px;
-  margin-left: -80px;
+  width: 130px;
+  margin-left: -100px;
 }
 
 .title h2 {
   margin: auto 0;
   color: #faf8f8;
+  font-family: "Righteous", cursive;
+  letter-spacing: 2px;
+  font-size: 35px;
 }
 .project-container {
   width: 60%;
@@ -176,6 +209,198 @@ PROJECTS SECTION
 .project-blockB {
   height: 60%;
 }
+/*
+=============== 
+WEB SITE INNER SECTION
+===============
+*/
+
+.web-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #3f3d5641;
+  z-index: 2;
+}
+
+.web-container {
+  display: none;
+}
+
+.show.web-container {
+  display: block;
+}
+
+.web-block {
+  width: 50%;
+  height: 60%;
+  margin: 10% auto;
+  background-color: #faf8f8;
+  border: 1px solid #008cff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.block-A {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-A h3 {
+  margin: auto 25% auto 0;
+  font-family: "Righteous", cursive;
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: #008cff;
+}
+
+.block-B {
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+
+.block-B1 {
+  width: 40%;
+  height: 100%;
+  margin-top: 4%;
+}
+.block-B1 h4 {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.5px;
+  color: #3f3d56;
+  font-size: 20px;
+}
+.b1-images {
+  display: flex;
+  justify-content: space-around;
+  background-color: #faf8f8;
+  margin-top: 5%;
+}
+
+.b1-images img {
+  width: 15%;
+}
+
+.b1-contain {
+  display: flex;
+  height: 57%;
+  padding-top: 20px;
+}
+
+.b1-box {
+  width: 50%;
+  background-color: #faf8f8;
+  border-top: 2px solid #dfe6ec;
+  padding-top: 15px;
+}
+
+.b1-box:first-child {
+  border-right: 2px solid #dfe6ec;
+}
+
+.b1-text {
+  padding: 5%;
+}
+
+.b1-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+.block-B2 {
+  width: 60%;
+  height: 95%;
+  margin-top: 4%;
+}
+
+.b2-content {
+  height: 85%;
+}
+
+.b2-content h4 {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.5px;
+  color: #3f3d56;
+  font-size: 20px;
+}
+
+.b2-text {
+  width: 90%;
+  height: 80%;
+  margin: 5% auto 0 auto;
+  border-radius: 5px;
+  border: 2px solid #dfe6ec;
+  padding: 3%;
+}
+
+.b2-text p {
+  font-family: "Open Sans", sans-serif;
+}
+.b2-buttons {
+  height: 15%;
+  display: flex;
+  margin-left: 40%;
+}
+
+.b2-btn {
+  display: flex;
+  border-radius: 25px;
+  outline: none;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  height: 50px;
+  padding: 5px 15px;
+  border: 3px solid #008cff;
+  margin-right: 15px;
+}
+.b2-btn.one:hover {
+  background-color: #f1cb63;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.b2-btn.two {
+  background-color: #595674;
+  border: 3px solid #7db7e7;
+  color: #dfe6ec;
+}
+
+.b2-btn.two:hover {
+  background-color: #f1cb63;
+  color: #3f3d56;
+  transition: ease-in-out 0.3s;
+  border-color: #8784ac;
+}
+
+.b2-btn h5 {
+  padding-top: 5px;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.block-img {
+  display: block;
+  margin-left: 12%;
+  width: 150px !important;
+}
+
+.cross {
+  width: 4% !important;
+}
+
+.cross:hover {
+  background-color: #f1cb63;
+  border-radius: 50%;
+  transform: rotate(90deg);
+  transition: 0.3s ease-in-out;
+}
 
 /*
 =============== 
@@ -194,7 +419,7 @@ SKILLS SECTION
 .skills-container {
   width: 50%;
   height: auto;
-  margin: auto;
+  margin: 50px auto;
   border-radius: 5px;
   display: flex;
   padding: 5px;
@@ -214,11 +439,15 @@ SKILLS SECTION
 }
 .skill h3 {
   text-align: center;
+  font-family: "Bebas Neue", cursive;
+  color: #3f3d56;
+  letter-spacing: 0.5px;
+  font-size: 22px;
 }
 
 .skill ul {
   width: 75%;
-  margin: 12% auto;
+  margin: 10% auto;
   padding: 0 10px;
   border-radius: 0px 5px;
   background-color: white;
@@ -229,6 +458,10 @@ SKILLS SECTION
   display: flex;
   padding: 10px 0;
   border-bottom: 1px solid #faf8f8;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #3f3d56;
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 
 .skill ul li h4 {
@@ -245,11 +478,16 @@ ABOUT SECTION
 ===============
 */
 
-.about-section {
-  height: 30vh;
+.about-section .title h2 {
+  color: #3f3d56;
 }
 
-.about-section .title h2 {
+.about-section h5 {
+  text-align: center;
+  width: 50%;
+  margin: 25px auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
   color: #3f3d56;
 }
 /*
